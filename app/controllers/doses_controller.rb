@@ -5,6 +5,11 @@ class DosesController < ApplicationController
     @dose = Dose.new
   end
 
+  def create_ingredient
+    @ingredient = Ingredient.new(:name)
+    @ingredient.save
+  end
+
   def create
     @dose = Dose.new(dose_params)
     @dose.cocktail = @cocktail
