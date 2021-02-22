@@ -9,6 +9,7 @@
       <table class="table table-bordered">
         <tbody>
           <thead>
+            <%= cl_image_tag @cocktails.photo.key, height: 300, width: 400, crop: :fill %>
             <th>Ingredient</th>
             <th>Description</th>
             <th>Action</th>
