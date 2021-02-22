@@ -8,7 +8,7 @@
     <div class="row">
       <% @cocktails.each do |cocktail| %>
         <div class="col-sm-3">
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2))", url (' <%= cl_image_tag="e1482408991253", alt="gin basil smash", width: 400, height: 300, crop: :fill %> ')>
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2))", url (<%= cl_image_tag="e1482408991253", alt="gin basil smash", width: 400, height: 300, crop: :fill %>)>
              <h5 class="card-title"><%= cocktail.name %></h5>
              <%= link_to "View", root_path(cocktail), class: "btn btn-primary"%>
           </div>
